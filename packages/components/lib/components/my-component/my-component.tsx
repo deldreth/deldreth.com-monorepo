@@ -29,7 +29,8 @@ export class MyComponent {
   render() {
     return (
       <div>
-        Hello, World! I'm {this.getText()} <button class="button">asdf</button>
+        Hello, World! I'm {this.getText()}{" "}
+        <button class="button">Button</button>
       </div>
     );
   }
