@@ -1,0 +1,19 @@
+{
+  "name": "deldreth.com",
+  "version": "0.0.0",
+  "description": "Website",
+  "author": "Devin Eldreth <devin.eldreth@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/deldreth.com.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
