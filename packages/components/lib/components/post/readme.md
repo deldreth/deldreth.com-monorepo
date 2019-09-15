@@ -7,12 +7,27 @@
 
 ## Properties
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+| Property      | Attribute     | Description | Type     | Default     |
+| ------------- | ------------- | ----------- | -------- | ----------- |
+| `article`     | `article`     |             | `string` | `undefined` |
+| `date`        | `date`        |             | `string` | `undefined` |
+| `description` | `description` |             | `string` | `undefined` |
+| `image`       | `image`       |             | `string` | `undefined` |
+| `tags`        | `tags`        |             | `string` | `undefined` |
 
+
+## Dependencies
+
+### Depends on
+
+- [dae-tags](../tags)
+
+### Graph
+```mermaid
+graph TD;
+  dae-post --> dae-tags
+  style dae-post fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

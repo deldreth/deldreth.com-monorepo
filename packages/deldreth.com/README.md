@@ -1,11 +1,9 @@
-# `deldreth.com`
+# gatsby-starter-blog
+Gatsby starter for creating a blog
 
-> TODO: description
+Install this starter (assuming Gatsby is installed) by running from your CLI:
 
-## Usage
+`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
 
-```
-const deldrethCom = require('deldreth.com');
-
-// TODO: DEMONSTRATE API
-```
+## Running in development
+`gatsby develop`

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('./assets/fonts/SourceSerifPro/SourceSerifPro-Light.otf')
+      format('opentype'),
+    url('./assets/fonts/SourceSerifPro/SourceSerifPro-Light.ttf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  src: url('./assets/fonts/SourceSerifPro/SourceSerifPro-LightIt.otf')
+      format('opentype'),
+    url('./assets/fonts/SourceSerifPro/SourceSerifPro-LightIt.ttf')
+      format('truetype');
+}
+
+twitterwidget {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em !important;
+}

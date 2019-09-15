@@ -1,4 +1,4 @@
-import { h, Component, Prop, Watch } from "@stencil/core";
+import { h, Component, Prop } from "@stencil/core";
 
 @Component({
   tag: "dae-post",
