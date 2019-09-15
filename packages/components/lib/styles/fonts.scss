@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("./fonts/SourceSerifPro/SourceSerifPro-Light.otf") format("opentype"),
+    url("./fonts/SourceSerifPro/SourceSerifPro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("./fonts/SourceSerifPro/SourceSerifPro-LightIt.otf")
+      format("opentype"),
+    url("./fonts/SourceSerifPro/SourceSerifPro-LightIt.ttf") format("truetype");
+}

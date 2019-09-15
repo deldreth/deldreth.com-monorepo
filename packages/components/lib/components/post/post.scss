@@ -1,0 +1,41 @@
+@import "bulma/sass/elements/title.sass";
+@import "bulma/sass/elements/image.sass";
+@import "bulma/sass/components/card.sass";
+
+.card {
+  border-bottom: 1px solid $border;
+  background-color: transparent;
+  box-shadow: none;
+
+  @media (min-width: $sm) {
+    border-bottom: none;
+  }
+
+  &-content {
+    font-family: sans-serif;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .title {
+      color: $blue;
+      font-family: serif;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      color: $lightgray;
+    }
+
+    time {
+      color: $teal;
+    }
+  }
+
+  .image {
+    background-color: $lightgray;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 18px;
+  }
+}

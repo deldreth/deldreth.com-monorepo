@@ -9,6 +9,16 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface DaePost {
+    'article': string;
+    'date': string;
+    'description': string;
+    'image': string;
+    'tags': string;
+  }
+  interface DaeTags {
+    'tags': string;
+  }
   interface MyComponent {
     /**
     * The first name
@@ -28,17 +38,41 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLDaePostElement extends Components.DaePost, HTMLStencilElement {}
+  var HTMLDaePostElement: {
+    prototype: HTMLDaePostElement;
+    new (): HTMLDaePostElement;
+  };
+
+  interface HTMLDaeTagsElement extends Components.DaeTags, HTMLStencilElement {}
+  var HTMLDaeTagsElement: {
+    prototype: HTMLDaeTagsElement;
+    new (): HTMLDaeTagsElement;
+  };
+
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
     prototype: HTMLMyComponentElement;
     new (): HTMLMyComponentElement;
   };
   interface HTMLElementTagNameMap {
+    'dae-post': HTMLDaePostElement;
+    'dae-tags': HTMLDaeTagsElement;
     'my-component': HTMLMyComponentElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface DaePost extends JSXBase.HTMLAttributes<HTMLDaePostElement> {
+    'article'?: string;
+    'date'?: string;
+    'description'?: string;
+    'image'?: string;
+    'tags'?: string;
+  }
+  interface DaeTags extends JSXBase.HTMLAttributes<HTMLDaeTagsElement> {
+    'tags'?: string;
+  }
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
     /**
     * The first name
@@ -55,6 +89,8 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
+    'dae-post': DaePost;
+    'dae-tags': DaeTags;
     'my-component': MyComponent;
   }
 }

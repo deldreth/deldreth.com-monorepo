@@ -27,7 +27,8 @@
   "license": "MIT",
   "dependencies": {
     "@stencil/sass": "^1.0.1",
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "typography": "^0.16.19"
   },
   "sass": {
     "includePaths": [
