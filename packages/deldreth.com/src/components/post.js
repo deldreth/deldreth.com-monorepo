@@ -9,46 +9,54 @@ import { rhythm, scale } from '../utils/typography';
 
 export default function Post(props) {
   return (
-    <Container
-      key={props.post.fields.slug}
-      style={{ display: 'flex', flexDirection: 'column' }}
-    >
-      {props.post.frontmatter.thumbnail && (
-        <Link to={props.post.fields.slug}>
-          <Thumbnail
-            backgroundColor={props.post.frontmatter.thumbnailBg}
-            sizes={props.post.frontmatter.thumbnail.childImageSharp.sizes}
-          />
-        </Link>
-      )}
-
-      <h3
-        style={{
-          marginBottom: rhythm(0.5),
-        }}
-      >
-        <Link to={props.post.fields.slug}>{props.post.frontmatter.title}</Link>
-      </h3>
-      <Date onClick={() => push(props.post.fields.slug)}>
-        {props.post.frontmatter.date}
-      </Date>
-
-      <Excerpt
-        onClick={() => push(props.post.fields.slug)}
-        dangerouslySetInnerHTML={{ __html: props.post.excerpt }}
-      />
-
-      {props.post.frontmatter.tags.length && (
-        <Tags>
-          {props.post.frontmatter.tags.map(tag => (
-            <Tag to={`/tags/${kebabCase(tag)}`} key={tag}>
-              {tag}
-            </Tag>
-          ))}
-        </Tags>
-      )}
-    </Container>
+    <dae-post
+      article={props.post.frontmatter.title}
+      description={props.post.excerpt}
+      date={props.post.frontmatter.date}
+      tags={JSON.stringify(props.post.frontmatter.tags)}
+    />
   );
+  // return (
+  //   <Container
+  //     key={props.post.fields.slug}
+  //     style={{ display: 'flex', flexDirection: 'column' }}
+  //   >
+  //     {props.post.frontmatter.thumbnail && (
+  //       <Link to={props.post.fields.slug}>
+  //         <Thumbnail
+  //           backgroundColor={props.post.frontmatter.thumbnailBg}
+  //           sizes={props.post.frontmatter.thumbnail.childImageSharp.sizes}
+  //         />
+  //       </Link>
+  //     )}
+
+  //     <h3
+  //       style={{
+  //         marginBottom: rhythm(0.5),
+  //       }}
+  //     >
+  //       <Link to={props.post.fields.slug}>{props.post.frontmatter.title}</Link>
+  //     </h3>
+  //     <Date onClick={() => push(props.post.fields.slug)}>
+  //       {props.post.frontmatter.date}
+  //     </Date>
+
+  //     <Excerpt
+  //       onClick={() => push(props.post.fields.slug)}
+  //       dangerouslySetInnerHTML={{ __html: props.post.excerpt }}
+  //     />
+
+  //     {props.post.frontmatter.tags.length && (
+  //       <Tags>
+  //         {props.post.frontmatter.tags.map(tag => (
+  //           <Tag to={`/tags/${kebabCase(tag)}`} key={tag}>
+  //             {tag}
+  //           </Tag>
+  //         ))}
+  //       </Tags>
+  //     )}
+  //   </Container>
+  // );
 }
 
 const Container = styled('div')`
