@@ -6,14 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run storybook",
-    "storybook": "start-storybook -s ../components/www",
+    "storybook": "start-storybook -p 9001 -s ../components/www",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "components": "^0.0.1"
+    "@storybook/addon-docs": "^5.2.0",
+    "@storybook/addon-viewport": "^5.2.0",
+    "components": "^0.0.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "write-file-webpack-plugin": "^4.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
