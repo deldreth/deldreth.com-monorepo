@@ -3,6 +3,8 @@
 @import "bulma/sass/components/card.sass";
 
 .card {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: light;
   border-bottom: 1px solid $border;
   background-color: transparent;
   box-shadow: none;
@@ -12,15 +14,13 @@
   }
 
   &-content {
-    font-family: sans-serif;
-
     &:hover {
       cursor: pointer;
     }
 
     .title {
       color: $blue;
-      font-family: serif;
+      font-family: "Source Serif Pro", serif;
       font-weight: normal;
     }
 

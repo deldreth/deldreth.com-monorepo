@@ -4,8 +4,8 @@ Todo:
 
 - [x] Stencil
 - [x] Storybook
-- [ ] HMR for Storybook
-- [ ] Storybook runs against components dist
+- [x] HMR for Storybook (kinda, results in a full reload)
+- [x] Storybook runs against components dist
 
 ## Storybook Development
 
@@ -15,9 +15,8 @@ Run start in parallel.
 lerna run start --parallel --stream
 ```
 
-Or start stencil's server and storybook in separate terminals.
+or
 
 ```bash
-lerna run start --scope components --stream
-lerna run storybook --stream
+npm run develop
 ```
