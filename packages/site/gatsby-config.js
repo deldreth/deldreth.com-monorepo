@@ -73,6 +73,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-plugin-sass',
           {
             resolve: 'gatsby-remark-embed-youtube',
             options: {
