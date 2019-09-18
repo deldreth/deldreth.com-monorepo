@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fs-extra": "^4.0.0"
+  },
+  "description": "Copies files from source to destination.",
+  "license": "MIT",
+  "main": "gatsby-node.js",
+  "name": "copy-local-files"
+}

@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     {
+      resolve: `copy-local-files`,
+      options: {
+        source: `${__dirname}/../components/dist/components`,
+        destination: 'components',
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         excerpt_separator: `<!-- end -->`,
